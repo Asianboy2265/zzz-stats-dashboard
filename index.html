@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZZZ Stats Dashboard</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 32px 16px;
+      background: #111216;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      max-width: 760px;
+      margin: auto;
+    }
+
+    .eyebrow {
+      color: #ff9e45;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 { font-size: 34px; margin-bottom: 8px; }
+
+    .subtitle { color: #a9abb5; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 26px;
+    }
+
+    .stat {
+      padding: 22px;
+      background: #202127;
+      border: 1px solid #383943;
+      border-radius: 14px;
+    }
+
+    .label {
+      color: #b8bac4;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    .value {
+      font-size: 27px;
+      font-weight: bold;
+      margin-top: 12px;
+    }
+
+    .note {
+      margin-top: 24px;
+      color: #8d909c;
+      font-size: 13px;
+    }
+
+    @media (max-width: 450px) {
+      h1 { font-size: 27px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">NEW ERIDU // INTER-KNOT</div>
+    <h1>Proxy Status</h1>
+    <p class="subtitle">Zenless Zone Zero Player Dashboard</p>
+
+    <section class="grid">
+      <div class="stat">
+        <div class="label">INTER-KNOT LEVEL</div>
+        <div class="value">Not connected</div>
+      </div>
+      <div class="stat">
+        <div class="label">BATTERY ENERGY</div>
+        <div class="value">Not connected</div>
+      </div>
+      <div class="stat">
+        <div class="label">POLYCHROMES</div>
+        <div class="value">Not connected</div>
+      </div>
+      <div class="stat">
+        <div class="label">AGENT COLLECTION</div>
+        <div class="value">Not connected</div>
+      </div>
+    </section>
+
+    <p class="note">
+      Stats have not been connected yet. This dashboard
+      will display real player data once a data source is set up.
+    </p>
+  </main>
+</body>
+</html>
